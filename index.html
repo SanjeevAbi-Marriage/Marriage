@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wedding Invitation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 24px;
+      background: #fafafa;
+    }
+    .card {
+      max-width: 420px;
+      margin: auto;
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .button {
+      display: block;
+      margin-top: 24px;
+      padding: 14px;
+      background: #1a73e8;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+    .map {
+      color: #0b8043;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="card">
+  <h2>Wedding Invitation</h2>
+
+  <p>
+    <a class="map" href="https://share.google/kvqHl6q7TsglL1lBf" target="_blank">
+      View Venue Location
+    </a>
+  </p>
+
+  <p>
+    <strong>Reception</strong><br>
+    25 February 2026 – 6:30 PM onwards
+  </p>
+
+  <p>
+    <strong>Wedding</strong><br>
+    26 February 2026 – 9:00 AM to 10:30 AM
+  </p>
+
+  <a href="#" class="button" onclick="addToCalendar()">
+    Add All Events to Calendar
+  </a>
+</div>
+
+<script>
+function addToCalendar() {
+  const isApple = /iPhone|iPad|iPod|Macintosh/i.test(navigator.userAgent);
+
+  if (isApple) {
+    window.location.href = "wedding-events.ics";
+  } else {
+    window.location.href =
+      "https://calendar.google.com/calendar/u/0/r/settings/import";
+  }
+}
+</script>
+
+</body>
+</html>
