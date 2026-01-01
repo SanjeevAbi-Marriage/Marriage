@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Wedding Invitation</title>
+  <title>Sanjeev & Abinaya – Wedding Invitation</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Elegant wedding font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
 
   <style>
     body {
@@ -12,28 +15,51 @@
       padding: 24px;
       background: #fafafa;
     }
+
     .card {
       max-width: 420px;
       margin: auto;
       background: white;
-      border-radius: 16px;
-      padding: 24px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.12);
     }
+
+    .names {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 20px;
+    }
+
+    .event {
+      margin-top: 16px;
+      font-size: 15px;
+    }
+
     .button {
       display: block;
-      margin-top: 24px;
+      margin-top: 18px;
       padding: 14px;
-      background: #1a73e8;
-      color: white;
       text-decoration: none;
       border-radius: 10px;
       font-size: 16px;
+      color: white;
     }
-    .map {
-      color: #0b8043;
-      font-weight: bold;
-      text-decoration: none;
+
+    .venue-button {
+      background: #0b8043;
+    }
+
+    .calendar-button {
+      background: #1a73e8;
+      margin-top: 24px;
     }
   </style>
 </head>
@@ -41,27 +67,32 @@
 <body>
 
 <div class="card">
-  <h2>Wedding Invitation</h2>
 
-  <p>
-    <a class="map" href="https://share.google/kvqHl6q7TsglL1lBf" target="_blank">
-      View Venue Location
-    </a>
-  </p>
+  <div class="names">Sanjeev & Abinaya</div>
+  <div class="subtitle">Wedding Invitation</div>
 
-  <p>
+  <a class="button venue-button"
+     href="https://share.google/kvqHl6q7TsglL1lBf"
+     target="_blank">
+     View Venue Location
+  </a>
+
+  <div class="event">
     <strong>Reception</strong><br>
-    25 February 2026 – 6:30 PM onwards
-  </p>
+    25 February 2026<br>
+    6:30 PM onwards
+  </div>
 
-  <p>
+  <div class="event">
     <strong>Wedding</strong><br>
-    26 February 2026 – 9:00 AM to 10:30 AM
-  </p>
+    26 February 2026<br>
+    9:00 AM – 10:30 AM
+  </div>
 
-  <a href="#" class="button" onclick="addToCalendar()">
+  <a href="#" class="button calendar-button" onclick="addToCalendar()">
     Add All Events to Calendar
   </a>
+
 </div>
 
 <script>
