@@ -7,14 +7,14 @@ UID:reception@wedding
 DTSTAMP:20260201T000000Z
 DTSTART:20260225T130000Z
 DTEND:20260225T180000Z
-SUMMARY:Wedding Reception
+SUMMARY:Sanjeev & Abinaya Reception
 LOCATION:https://share.google/kvqHl6q7TsglL1lBf
 DESCRIPTION:Reception Ceremony
 
 BEGIN:VALARM
 TRIGGER:-P1D
 ACTION:DISPLAY
-DESCRIPTION:Wedding Reception Reminder
+DESCRIPTION:Sanjeev & Abinaya Reception Reminder
 END:VALARM
 
 END:VEVENT
@@ -24,14 +24,14 @@ UID:wedding@wedding
 DTSTAMP:20260201T000000Z
 DTSTART:20260226T033000Z
 DTEND:20260226T050000Z
-SUMMARY:Wedding Ceremony
+SUMMARY:Sanjeev & Abinaya Wedding Ceremony
 LOCATION:https://share.google/kvqHl6q7TsglL1lBf
 DESCRIPTION:Wedding Ceremony
 
 BEGIN:VALARM
 TRIGGER:-P1D
 ACTION:DISPLAY
-DESCRIPTION:Wedding Ceremony Reminder
+DESCRIPTION:Sanjeev & Abinaya Wedding Ceremony Reminder
 END:VALARM
 
 END:VEVENT
